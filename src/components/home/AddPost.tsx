@@ -18,15 +18,15 @@ const AddPost: React.FC = () => {
         </div>
         </div>
         <div className="flex justify-between mt-3">
-            <button className="flex items-center p-2 text-gray-700 hover:bg-gray-100 rounded-md transition">
+            <button className="flex items-center py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md transition">
                 <FaVideo className="text-red-500 mr-3 text-lg" />
                 <span className="font-medium">Live video</span>
             </button>
-            <button className="flex items-center p-2 text-gray-700 hover:bg-gray-100 rounded-md transition">
+            <button className="flex items-center py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md transition">
                 <FaImages className="text-green-500 mr-3 text-lg" />
                 <span className="font-medium">Photo/Video</span>
             </button>
-            <button className="flex items-center p-2 text-gray-700 hover:bg-gray-100 rounded-md transition">
+            <button className="flex items-center py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md transition">
                 <FaRegSmile className="text-yellow-500 mr-3 text-lg" />
                 <span className="font-medium">Feeling/Activity</span>
             </button>

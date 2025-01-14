@@ -3,7 +3,7 @@ import { FaBirthdayCake, FaSearch, FaEllipsisH, FaPen } from 'react-icons/fa';
 
 const RightMenu: React.FC = () => {
   return (
-    <div className="h-screen fixed right-0 w-72 mr-4 bg-white rounded-md shadow-md p-4 overflow-y-auto mt-24 z-10">
+    <div className="fixed w-72 right-0 mr-4 rounded-md p-4 overflow-y-auto hidden-scrollbar mt-20" style={{ maxHeight: '88vh' }}>
       {/* Friend Requests Section */}
       <div className="mb-6">
         <div className="flex justify-between items-center mb-4">
@@ -14,7 +14,7 @@ const RightMenu: React.FC = () => {
         </div>
         <div className="flex items-center space-x-4 mb-3">
           <img
-            src="https://via.placeholder.com/40"
+            src="https://scontent.fdel3-3.fna.fbcdn.net/v/t39.30808-1/459186436_489603507174158_9120422350225723790_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_ohc=LY9Rkm-ePbgQ7kNvgF_NDO2&_nc_zt=24&_nc_ht=scontent.fdel3-3.fna&_nc_gid=AEd1BmETgkHDrfrePQ6frzC&oh=00_AYCWjxn5JlStr0nLNwbZyrHIgwFh_mJXrqSeeH0MuVg6AQ&oe=678C5C56"
             alt="Friend Request"
             className="w-10 h-10 rounded-full"
           />
@@ -34,7 +34,7 @@ const RightMenu: React.FC = () => {
       </div>
 
       {/* Birthdays Section */}
-      <div className="mb-6">
+      <div className="border-y-2 mb-5 py-3">
         <h2 className="font-semibold text-gray-800 mb-2">Birthdays</h2>
         <div className="flex items-center space-x-2">
           <FaBirthdayCake className="text-pink-500" />
