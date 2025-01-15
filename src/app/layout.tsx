@@ -3,6 +3,8 @@ import {Lato,Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Provider } from "react-redux";
+import store from "@/store/store";
 
 export const metadata: Metadata = {
   title: "Komo",
@@ -19,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <Provider store={store}>
       <html lang="en">
         <body className={lato.className}>
           <div className="w-full bg-white px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
@@ -30,6 +32,6 @@ export default function RootLayout({
           </div>
         </body>
       </html>
-    </ClerkProvider>
+    </Provider>
   );
 }

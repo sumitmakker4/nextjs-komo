@@ -2,15 +2,14 @@ import React from 'react';
 import { FaBirthdayCake, FaSearch, FaEllipsisH, FaPen } from 'react-icons/fa';
 
 const RightMenu: React.FC = () => {
+
   return (
     <div className="fixed w-72 right-0 mr-4 rounded-md p-4 overflow-y-auto hidden-scrollbar mt-20" style={{ maxHeight: '88vh' }}>
       {/* Friend Requests Section */}
       <div className="mb-6">
         <div className="flex justify-between items-center mb-4">
           <h2 className="font-semibold text-gray-800">Friend Requests</h2>
-          <a href="#" className="text-blue-600 text-sm">
-            See All
-          </a>
+          <a href="#" className="text-blue-600 text-sm hover:bg-gray-200 px-2 py-1 rounded-sm">See All</a>
         </div>
         <div className="flex items-center space-x-4 mb-3">
           <img
@@ -56,20 +55,15 @@ const RightMenu: React.FC = () => {
         </div>
         <ul className="space-y-4">
           {[
-            { name: 'Sakshi Sourav Thakral', online: true },
-            { name: 'Kuldeep Sehrawat', online: true },
-            { name: 'Archna Thakur', online: true },
-            { name: 'Seema Narula', online: true },
-            { name: 'Manoj Makkar', online: true },
-            { name: 'Sunil Uppal', online: true },
-            { name: 'Piyush Bansal', online: true },
-            { name: 'Piyush Bansal', online: true },
-            { name: 'Piyush Bansal', online: true },
-            { name: 'Piyush Bansal', online: true },
+            { name: 'Sakshi Sourav Thakral', online: true,profilePic : 'https://scontent.fdel3-1.fna.fbcdn.net/v/t39.30808-1/473037467_1290248582177621_639955150940123361_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=lxtVA3S_DpMQ7kNvgHAhvkt&_nc_zt=24&_nc_ht=scontent.fdel3-1.fna&_nc_gid=ARm6ZHHi--VSbckCeJpOnDB&oh=00_AYAnE7YsWMID2ArjzB3Drxw88uMOxh7zPAPckUdTJZi9Iw&oe=678DAB36'},
+            { name: 'Kuldeep Sehrawat', online: true,profilePic : 'https://scontent.fdel3-2.fna.fbcdn.net/v/t1.6435-1/106620819_1173944439665021_1514476512304560211_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=lGyIila4KLIQ7kNvgHzxSrJ&_nc_zt=24&_nc_ht=scontent.fdel3-2.fna&_nc_gid=ARm6ZHHi--VSbckCeJpOnDB&oh=00_AYBGnHkSzkaiw4bRjGoJ3UM6rgpMrEKHDGF_IVnIKK9aYA&oe=67AF696A'},
+            { name: 'Gautam Kumar', online: true,profilePic : 'https://scontent.fdel3-1.fna.fbcdn.net/v/t39.30808-1/296739353_1031632527539524_5345666994005361750_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=PPy90UPsB98Q7kNvgGEROnA&_nc_zt=24&_nc_ht=scontent.fdel3-1.fna&_nc_gid=ANyn-ojWBnYmshcS9Humufu&oh=00_AYAyp1OjPCC3n6X5sVaGS9MzpkFwfVoa58GSougRxl6dBg&oe=678DA044'},
+            { name: 'Dipesh Sharma', online: true,profilePic : 'https://scontent.fdel3-5.fna.fbcdn.net/v/t39.30808-1/462625507_2314777385537968_854133501278523703_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=-kr8UZ2L0YQQ7kNvgElR7it&_nc_zt=24&_nc_ht=scontent.fdel3-5.fna&_nc_gid=AmYNzLtjuoyDSQtZFltzcxn&oh=00_AYCuBug2_dy9rt07J4ha5TbBB5D2uvHNRtEq2yTCiylMPQ&oe=678DB664'},
+            { name: 'Manoj Makkar', online: true,profilePic : 'https://scontent.fdel3-1.fna.fbcdn.net/v/t39.30808-1/395365592_993902068578774_4546113184901114981_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_ohc=Onjpo-BCeMAQ7kNvgFF0GSn&_nc_zt=24&_nc_ht=scontent.fdel3-1.fna&_nc_gid=AnxMg3IBvo_FFu8FUWOXF66&oh=00_AYBtkMJ0zle099a7it6EtSxOzV16IUkkDKyG1ssxEyQU9g&oe=678DC17C'},
           ].map((contact, index) => (
             <li key={index} className="flex items-center space-x-4">
               <img
-                src="https://via.placeholder.com/40"
+                src={contact.profilePic}
                 alt={contact.name}
                 className="w-8 h-8 rounded-full"
               />

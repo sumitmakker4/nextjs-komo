@@ -43,7 +43,7 @@ const Stories: React.FC = () => {
     if (containerRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = containerRef.current;
       setShowLeft(scrollLeft > 0);
-      setShowRight(scrollLeft + clientWidth < scrollWidth);
+      setShowRight(Math.ceil(scrollLeft + clientWidth) < scrollWidth);
     }
   };
 
