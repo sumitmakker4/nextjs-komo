@@ -9,20 +9,14 @@ export default function Home() {
   return (
     <div className="flex justify-center">
 
-        {/* Left Side */}
-        <div className="">
-            <LeftMenu />
-        </div>
-        {/* Center */}
+        <LeftMenu />
+
         <div className="w-[50%]">
           <AddPost />
           <Stories />
           <Feeds />
         </div>
-        {/* Right */}
-        <div className="">
-          <RightMenu />
-        </div>
+        <RightMenu />
     </div>
   );
 }

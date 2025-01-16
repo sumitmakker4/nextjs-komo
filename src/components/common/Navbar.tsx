@@ -16,11 +16,10 @@ function Navbar() {
   const menu = useRef<HTMLDivElement>(null);
 
   return (
-    <nav className="flex flex-wrap items-center justify-between w-full text-lg text-gray-700 bg-white px-5 fixed left-0 right-0 z-10">
+    <nav className="fixed left-0 right-0 z-10 flex flex-wrap items-center justify-between w-full text-lg text-gray-700 bg-white px-5">
       <div>
         <Link href="/" className='font-bold text-2xl text-purple-600'>KOMO</Link>
       </div>
-      
       
       <div className="hidden md:block">
           <div className="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
@@ -53,7 +52,7 @@ function Navbar() {
             :
             <>
             <li>
-              <Link href="/sign-up" className="inline-block mt-1 md:mt-2 py-2 px-4 bg-purple-600 hover:bg-purple-500 text-white rounded">Sign up</Link>
+              <Link href="/signup" className="inline-block mt-1 md:mt-2 py-2 px-4 bg-purple-600 hover:bg-purple-500 text-white rounded">Sign up</Link>
             </li>
             </>
           }
